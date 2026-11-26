@@ -1,0 +1,38 @@
+{
+  "cfg": {
+    "vocab_size": 2048,
+    "ctx_len": 256,
+    "d_model": 192,
+    "n_layers": 4,
+    "n_heads": 6,
+    "d_ff": 512,
+    "rms_eps": 1e-05,
+    "rope_theta": 10000.0,
+    "tied_embeddings": true,
+    "profile": "S"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "step": 80,
+      "val_loss_float": 5.88939094543457,
+      "val_ppl_float": 361.185235851449,
+      "val_loss_int8": 5.8888044357299805,
+      "val_ppl_int8": 360.97345931603496,
+      "int8_gap": -0.0005865097045898438,
+      "best_val_loss_int8": 5.8888044357299805,
+      "best_val_loss_float": 5.88939094543457
+    },
+    {
+      "epoch": 1,
+      "step": 160,
+      "val_loss_float": 5.790369987487793,
+      "val_ppl_float": 327.1340374886238,
+      "val_loss_int8": 5.791311264038086,
+      "val_ppl_int8": 327.44210605302646,
+      "int8_gap": 0.0009412765502929688,
+      "best_val_loss_int8": 5.791311264038086,
+      "best_val_loss_float": 5.790369987487793
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "format": "tartarus-csr-v1",
+  "created_at_utc": "2026-11-24T15:32:42.180035+00:00",
+  "tokenizer_file": "tokenizer.json",
+  "tokenizer_sha256": "6c5ef4685ced643532333f587d6bd595b437ce6e896cbf01d69b8069a218c1a2",
+  "vocab_size": 2048,
+  "special_tokens": {
+    "<|pad|>": 0,
+    "<|eos|>": 1,
+    "<|state|>": 2,
+    "<|user|>": 3,
+    "<|npc|>": 4
+  },
+  "dtypes": {
+    "tokens": "<u2",
+    "mask": "u1",
+    "offsets": "<u8"
+  },
+  "endianness": "little",
+  "loss_mask_rule": "0 for tokens from <|state|> through <|npc|> inclusive; 1 for tokens after <|npc|> through <|eos|> inclusive",
+  "splits": {
+    "train": {
+      "source_file": "train.jsonl",
+      "num_samples": 20000,
+      "total_tokens": 1513840,
+      "prompt_tokens_mask0": 1090077,
+      "loss_tokens_mask1": 423763,
+      "loss_token_ratio": 0.2799258838450563,
+      "seq_len_stats": {
+        "num_samples": 20000,
+        "total_chars": 6309628,
+        "total_tokens": 1513840,
+        "chars_per_token": 4.167962268139301,
+        "min": 36,
+        "mean": 75.692,
+        "median": 68.0,
+        "p95": 108,
+        "max": 154,
+        "pct_le_256": 100.0,
+        "pct_le_512": 100.0
+      },
+      "files": {
+        "tokens": {
+          "filename": "train_tokens.bin",
+          "dtype": "<u2",
+          "bytes": 3027680,
+          "sha256": "ab9881db35f3f6d30ce3ae7f1c8cf74dfe644aa863b2f2ac33a30a844b8c5102"
+        },
+        "mask": {
+          "filename": "train_mask.bin",
+          "dtype": "u1",
+          "bytes": 1513840,
+          "sha256": "a03e9ec7681ea7d33bbb4b1681fb8dc7d973475d5fec74ff9ab5ab834ee931e6"
+        },
+        "offsets": {
+          "filename": "train_offsets.bin",
+          "dtype": "<u8",
+          "bytes": 160008,
+          "sha256": "43ceca49e39cf6bfbee45af90c61e20e602c2759696e1c718478e231f0c33b81"
+        }
+      }
+    },
+    "val": {
+      "source_file": "val.jsonl",
+      "num_samples": 1000,
+      "total_tokens": 114667,
+      "prompt_tokens_mask0": 79775,
+      "loss_tokens_mask1": 34892,
+      "loss_token_ratio": 0.3042898131110084,
+      "seq_len_stats": {
+        "num_samples": 1000,
+        "total_chars": 314094,
+        "total_tokens": 114667,
+        "chars_per_token": 2.7391838977212277,
+        "min": 56,
+        "mean": 114.667,
+        "median": 112.0,
+        "p95": 161,
+        "max": 192,
+        "pct_le_256": 100.0,
+        "pct_le_512": 100.0
+      },
+      "files": {
+        "tokens": {
+          "filename": "val_tokens.bin",
+          "dtype": "<u2",
+          "bytes": 229334,
+          "sha256": "aafa78602ecf309e26d90c44b9f21e158aa8dda36f35985fb1756f2d42d166de"
+        },
+        "mask": {
+          "filename": "val_mask.bin",
+          "dtype": "u1",
+          "bytes": 114667,
+          "sha256": "7250a78bd5cd5395715c0d286759821692f52f7fbac05a935814f4e0ac9b1fc4"
+        },
+        "offsets": {
+          "filename": "val_offsets.bin",
+          "dtype": "<u8",
+          "bytes": 8008,
+          "sha256": "5bcf2349bc99e0ff9178184463f11517976f5767002dd9415c98b3843f117c8f"
+        }
+      }
+    },
+    "test": {
+      "source_file": "test.jsonl",
+      "num_samples": 1000,
+      "total_tokens": 120307,
+      "prompt_tokens_mask0": 84803,
+      "loss_tokens_mask1": 35504,
+      "loss_token_ratio": 0.2951116726375024,
+      "seq_len_stats": {
+        "num_samples": 1000,
+        "total_chars": 328455,
+        "total_tokens": 120307,
+        "chars_per_token": 2.730140390833451,
+        "min": 57,
+        "mean": 120.307,
+        "median": 117.0,
+        "p95": 164,
+        "max": 196,
+        "pct_le_256": 100.0,
+        "pct_le_512": 100.0
+      },
+      "files": {
+        "tokens": {
+          "filename": "test_tokens.bin",
+          "dtype": "<u2",
+          "bytes": 240614,
+          "sha256": "2ac3b79163f942f06ca0ab1341af66be842c04b3301916077432b23737c38f45"
+        },
+        "mask": {
+          "filename": "test_mask.bin",
+          "dtype": "u1",
+          "bytes": 120307,
+          "sha256": "f783db3597e80f1ecf8a2062ac2c0e14a97fa1c1956d83194585ad5116857df3"
+        },
+        "offsets": {
+          "filename": "test_offsets.bin",
+          "dtype": "<u8",
+          "bytes": 8008,
+          "sha256": "46d2cfdeff2b911fbd540ed8207bdef8a243dd6425fa9f3c7dc2c30d48ff193c"
+        }
+      }
+    }
+  }
+}
